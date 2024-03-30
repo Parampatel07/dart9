@@ -8,13 +8,25 @@ void main() {
   int answer = 0;
   print(first);
   print(second);
-  answer = first + second; // 3
-  print(answer);
-  answer = answer + second;//4
-  print(answer);
-  answer= answer + first+ second; // 7
-  print(answer);
-  answer = answer + ( first * first );  // 11
-  print(answer);
-  
+
+  while (answer < 3000) {
+    answer = first + second; // 3
+    first = answer;
+    print(answer);
+    answer = answer + second; // 4
+    second = answer;
+    if (answer < 3000) {
+      print(answer);
+    }
+  }
+  // answer = answer + first; // 7
+  // first = answer;
+  // print(answer);
+  // answer = answer + second; //11
+  // second = answer ;
+  // print(answer);
+  // answer = answer + first; // 18
+  // print(answer);
+  // answer = answer + second ;
+  // print(answer);
 }
