@@ -33,9 +33,5 @@ void main() {
 
   print(even_list.length);
   print(odd_list.length);
-  for (count = 0; count < even_list.length; count++) {
-
-    
-
-  }
+  for (count = 0; count < even_list.length; count++) {}
 }
